@@ -1,0 +1,411 @@
+:root {
+    --darkpink: #B56576;
+    --darkteal: #0e3b45;
+    --black: #08090A;
+    --orange: #e2a47d;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: 'Futura', 'Helvetica', 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+h2 span {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: var(--black);
+}
+
+h3 {
+    font-size: 15px;
+    color: white;
+    padding: 10px 10px 5px 10px;
+    font-weight: bold;
+}
+
+h4 {
+    color: white;
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0 0 10px 0;;
+}
+
+p {
+    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+
+/* HEADER / NAV STYLES START */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+header nav {
+    margin: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 0px 30px;
+    font-family: 'futura';
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: var(--darkpink);
+    padding-top: 40px;
+    border-top: var(--black) solid 5px;
+}
+
+.avatar {
+    width: 55px; 
+    height: 55px;
+}
+
+/* HEADER / NAV STYLES END */
+
+
+
+/* HERO STYLES START */
+
+.hero {
+    background-image: url('../images/WaterColor_hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 50%;
+    padding: 300px 0 40px 0;
+    position: relative;
+}
+
+.hero-text-bg {
+    height: 100px;
+    width: 500px;
+    background-color: var(--darkteal);
+    padding: 10px 0 10px 40px;
+    position: absolute;
+    right: 0px;
+    bottom: 40px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.hero h4 {
+    font-size: 12px;
+}
+
+/* HERO STYLES END */
+
+
+
+/* FLEX SECTION STYLE TAGS */
+
+.about-me {
+    padding-top: 75px;
+}
+
+.my-work,
+.contact-me {
+    padding: 75px 0 100px 0;
+}
+
+.about-me, 
+.my-work, 
+.contact-me {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-header {
+    flex: 1 20%;
+    padding: 0 70px 0 70px;
+    border-right: var(--black) solid 1px;
+    min-width: 300px;
+    text-align: right;
+}
+
+
+
+/* ABOUT SECTION STYLES START */
+
+.about-text {
+    padding: 0 100px 0 70px;
+    flex: 2 80%;
+}
+
+/* ABOUT SECTION STYLES END */
+
+
+
+/* PORTFOLIO SECTION STYLES START */
+
+.my-work-blocks {
+    padding: 0px 70px;
+    flex: 2 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.full-block {
+    flex: 2 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.quarter-block {
+    flex: 1 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.full-block img, 
+.quarter-block img {
+    width: 100%;
+    opacity: 0.6;
+}
+
+.full-block img:hover, 
+.quarter-block img:hover {
+    opacity: 1;
+    transition: .5s ease
+}
+
+.caption {
+    width: 210px;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    background-color: var(--darkteal);
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+/* PORTFOLIO SECTION STYLES END */
+
+
+
+/* CONTACT SECTION STYLES START */
+
+.contact-me {
+    background-color: var(--darkpink);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-links {
+    padding: 0px 70px;
+    flex: 2 80%;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-links ul {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.contact-links ul li a {
+    padding: 0px 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.contact-links ul li a:hover {
+    color: var(--orange);
+    padding-bottom: 20px;
+}
+
+/* CONTACT SECTION STYLES END */
+
+
+
+/* FOOTER SECTION STYLES START */
+
+footer {
+    background-color: var(--black);
+    padding: 20px;
+    text-align: center;
+}
+
+/* FOOTER SECTION STYLES END */
+
+
+
+/* UTILITIES */
+
+.pink {
+    color: #d4b1c0;
+}
+
+.dark-pink {
+    color: var(--darkpink);
+}
+
+.light-pink {
+    color: #ece7e7;
+}
+
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+@media screen and (max-width: 980px) {
+
+    .about-me, 
+    .my-work, 
+    .contact-me {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .contact-me {
+        align-items: stretch;
+    }
+
+    .left-header {
+        padding: 0 150px 0 150px;
+        border: none;
+    }
+
+    h2 {
+        text-align: center;
+        padding-bottom: 40px;
+        border-bottom: var(--black) solid 1px;
+    }
+
+    .about-text,
+    .my-work-blocks,
+    .contact-links  {
+        padding: 40px 70px 0 70px;
+    }
+
+    .contact-links ul {
+        justify-content: space-around;
+    }
+
+
+}
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+
+@media screen and (max-width: 768px) {
+
+    .hero-text-bg {
+        text-align: center;
+        padding: 10px 0 10px 0px;
+        width: 100%;
+    }
+
+    .about-text, 
+    .my-work-blocks, 
+    .contact-links {
+        padding: 40px 50px 0 50px;
+    }
+
+    .my-work-blocks {
+        flex-direction: column;
+    }
+
+}
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
+@media screen and (max-width: 575px) {
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    
+    header {
+        justify-content: center;
+        position: relative;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+    }
+
+    header nav ul li a {
+        padding: 0px 20px;
+
+    }
+
+    header nav ul li a:hover {
+        color: var(--darkpink);
+        border-top: none;
+    }
+
+    .contact-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-links ul li a:hover {
+        border-bottom: none;
+    }
+
+}
