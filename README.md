@@ -29,7 +29,7 @@ Project was updated using:
 * https://github.com/etrenholm/portfolio/
 * https://etrenholm.github.io/portfolio/
 
-![mockup](/assets/images/ET_Portfolio-screenshot.jpg)
+![mockup](./assets/images/ET_Portfolio-screenshot.jpg)
 
 ## Credit
 
