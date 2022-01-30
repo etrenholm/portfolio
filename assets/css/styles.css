@@ -3,6 +3,8 @@
     --darkteal: #0e3b45;
     --black: #08090A;
     --orange: #e2a47d;
+    --pink: #d4b1c0;
+    --white: white;
 
 }
 
@@ -19,13 +21,13 @@ body {
 h1 {
     font-size: 40px;
     font-weight: 700;
-    color: white;
+    color: var(--white);
 }
 
 h2 {
     font-size: 30px;
     font-weight: 700;
-    color: white;
+    color: var(--pink);
 }
 
 h2 span {
@@ -37,13 +39,13 @@ h2 span {
 
 h3 {
     font-size: 16px;
-    color: white;
+    color: var(--white);
     padding: 10px 10px 5px 10px;
     font-weight: bold;
 }
 
 h4 {
-    color: white;
+    color: var(--white);
     font-size: 14px;
     font-weight: normal;
     letter-spacing: 1px;
@@ -71,7 +73,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 9999;
-    background-color: white;
+    background-color: var(--white);
 }
 
 header a {
@@ -219,7 +221,7 @@ header nav ul li a:hover {
     bottom: 25px;
     left: 25px;
     background-color: var(--darkteal);
-    color: white;
+    color: var(--white);
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
@@ -237,6 +239,10 @@ header nav ul li a:hover {
     justify-content: space-between;
 }
 
+.contact-me h2 {
+    color: var(--white);
+}
+
 .contact-links {
     padding: 0px 70px;
     flex: 2 80%;
@@ -244,7 +250,7 @@ header nav ul li a:hover {
 
 .contact-links a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 .contact-links ul {
@@ -280,22 +286,6 @@ footer {
 }
 
 /* FOOTER SECTION STYLES END */
-
-
-
-/* UTILITIES */
-
-.pink {
-    color: #d4b1c0;
-}
-
-.dark-pink {
-    color: var(--darkpink);
-}
-
-.light-pink {
-    color: #ece7e7;
-}
 
 
 
