@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 40px;
     font-weight: bold;
     color: white;
 }
@@ -36,7 +36,7 @@ h2 span {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 16px;
     color: white;
     padding: 10px 10px 5px 10px;
     font-weight: bold;
@@ -44,7 +44,7 @@ h3 {
 
 h4 {
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -93,7 +93,7 @@ header nav ul {
 header nav ul li a {
     padding: 0px 30px;
     font-family: 'futura';
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -133,15 +133,6 @@ header nav ul li a:hover {
     position: absolute;
     right: 0px;
     bottom: 40px;
-}
-
-.hero h1 {
-    color: white;
-    font-size: 40px;
-}
-
-.hero h4 {
-    font-size: 12px;
 }
 
 /* HERO STYLES END */
@@ -223,7 +214,7 @@ header nav ul li a:hover {
 }
 
 .caption {
-    width: 210px;
+    width: 220px;
     position: absolute;
     bottom: 25px;
     left: 25px;
@@ -311,15 +302,46 @@ footer {
 
 @media screen and (max-width: 980px) {
 
-    .about-me, 
-    .my-work, 
-    .contact-me {
-        flex-direction: column;
-        flex-wrap: wrap;
+    h1 {
+        font-size: 42px;
     }
 
-    .contact-me {
-        align-items: stretch;
+    h2 {
+        font-size: 32px;
+        text-align: center;
+        padding-bottom: 40px;
+        border-bottom: var(--black) solid 1px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    header nav ul li a,
+    h2 span,
+    h4 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .avatar {
+        width: 75px;
+        height: 75px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header nav ul li a:hover {
+        color: var(--darkpink);
+        padding-top: 0;
+        border-top: none;
     }
 
     .left-header {
@@ -327,10 +349,14 @@ footer {
         border: none;
     }
 
-    h2 {
-        text-align: center;
-        padding-bottom: 40px;
-        border-bottom: var(--black) solid 1px;
+    .about-me, 
+    .my-work, 
+    .contact-me {
+        flex-direction: column;
+    }
+
+    .contact-me {
+        align-items: stretch;
     }
 
     .about-text,
@@ -343,28 +369,86 @@ footer {
         justify-content: space-around;
     }
 
+    .contact-links ul li a {
+        justify-content: space-around;
+        font-size: 16px;
+    }
 
 }
 
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { 
+
+    h1 {
+        font-size: 46px;
+    }
+
+    h2 {
+        font-size: 34px;
+        text-align: center;
+        padding-bottom: 42px;
+        border-bottom: var(--black) solid 1px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    header nav ul li a,
+    h2 span,
+    h4 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    header {
+        justify-content: center;
+        position: relative;
+    }
+
+    header a {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    
+    header nav ul li {
+        width: 50%;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+        display: block;
+    }
 
     .hero-text-bg {
         text-align: center;
         padding: 10px 0 10px 0px;
         width: 100%;
+        height: 110px;
     }
 
-    .about-text, 
-    .my-work-blocks, 
-    .contact-links {
-        padding: 40px 50px 0 50px;
+    .quarter-block {
+        flex: 0 100%;
     }
 
-    .my-work-blocks {
-        flex-direction: column;
+    .caption {
+        width: 250px;
+    }
+
+    .contact-links ul li a {
+        font-size: 18px;
     }
 
 }
@@ -374,29 +458,40 @@ footer {
 
 @media screen and (max-width: 575px) {
 
-    .avatar {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 10px;
-    }
-    
-    header {
-        justify-content: center;
-        position: relative;
+    h1 {
+        font-size: 48px;
     }
 
-    header nav ul {
-        flex-wrap: wrap;
+    h2 {
+        font-size: 36px;
+        text-align: center;
+        padding-bottom: 42px;
+        border-bottom: var(--black) solid 1px;
     }
 
-    header nav ul li a {
-        padding: 0px 20px;
-
+    h3 {
+        font-size: 22px;
     }
 
-    header nav ul li a:hover {
-        color: var(--darkpink);
-        border-top: none;
+    header nav ul li a,
+    h2 span,
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .about-text, 
+    .my-work-blocks, 
+    .contact-links {
+        padding: 50px 40px 0 40px;
+    }
+
+    .caption {
+        width: 275px;
     }
 
     .contact-links ul {
@@ -404,8 +499,12 @@ footer {
         align-items: center;
     }
 
-    .contact-links ul li a:hover {
-        border-bottom: none;
+    .contact-links ul li {
+        padding: 5px;
+    }
+
+    .contact-links ul li a {
+        font-size: 22px;
     }
 
 }
