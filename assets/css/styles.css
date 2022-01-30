@@ -92,7 +92,7 @@ header nav ul {
 
 header nav ul li a {
     padding: 0px 30px;
-    font-family: 'futura-pt';
+    font-family: 'futura-pt', 'Helvetica', 'Arial', sans-serif;
     font-size: 13px;
     letter-spacing: 1px;
     text-transform: uppercase;
