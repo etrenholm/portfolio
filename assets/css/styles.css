@@ -13,7 +13,7 @@
   }
 
 body {
-    font-family: 'Futura', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'futura-pt', 'Helvetica', 'Arial', sans-serif;
 }
 
 h1 {
@@ -92,8 +92,8 @@ header nav ul {
 
 header nav ul li a {
     padding: 0px 30px;
-    font-family: 'futura';
-    font-size: 12px;
+    font-family: 'futura-pt';
+    font-size: 13px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -258,6 +258,7 @@ header nav ul li a:hover {
 .contact-links ul li a {
     padding: 0px 30px;
     font-size: 14px;
+    font-weight: bold;
     letter-spacing: 1px;
 }
 
@@ -469,29 +470,10 @@ footer {
         border-bottom: var(--black) solid 1px;
     }
 
-    h3 {
-        font-size: 22px;
-    }
-
-    header nav ul li a,
-    h2 span,
-    h4 {
-        font-size: 18px;
-    }
-
-    p {
-        font-size: 22px;
-        line-height: 28px;
-    }
-
     .about-text, 
     .my-work-blocks, 
     .contact-links {
         padding: 50px 40px 0 40px;
-    }
-
-    .caption {
-        width: 275px;
     }
 
     .contact-links ul {
@@ -500,7 +482,7 @@ footer {
     }
 
     .contact-links ul li {
-        padding: 5px;
+        padding-bottom: 10px;
     }
 
     .contact-links ul li a {
