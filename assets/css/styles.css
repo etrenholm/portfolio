@@ -1,9 +1,10 @@
 :root {
-    --darkpink: #dbd6f4;
-    --darkteal: #132543;
+    --lavender: #dbd6f4;
+    --navy: #132543;
     --black: #08090A;
-    --orange: #e2a47d;
-    --pink: #451535;
+    --maroon: #451535;
+    --limegreen: #dbfe87;
+    --teal: #03b5aa;
     --white: white;
 }
 
@@ -17,16 +18,21 @@ body {
     font-family: 'futura-pt', 'Helvetica', 'Arial', sans-serif;
 }
 
-h1 {
-    font-size: 40px;
-    font-weight: 700;
+.white {
     color: var(--white);
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #451535;
+    line-height: 62px;
 }
 
 h2 {
     font-size: 30px;
     font-weight: 700;
-    color: var(--pink);
+    color: var(--black);
 }
 
 h2 span {
@@ -53,10 +59,9 @@ h4 {
 }
 
 p {
-    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'sofia-pro';
     font-size: 14px;
     line-height: 22px;
-    font-weight: 300;
     margin-bottom: 10px;
 }
 
@@ -100,9 +105,9 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: var(--darkpink);
+    /* color: var(--lavender); */
     padding-top: 40px;
-    border-top: var(--black) solid 5px;
+    border-top: var(--limegreen) solid 5px;
 }
 
 .avatar {
@@ -117,23 +122,8 @@ header nav ul li a:hover {
 /* HERO STYLES START */
 
 .hero {
-    background-image: url('../images/WaterColor_hero.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 50%;
-    padding: 300px 0 40px 0;
-    position: relative;
-}
-
-.hero-text-bg {
-    height: 100px;
-    width: 500px;
-    background-color: var(--darkteal);
-    padding: 10px 0 10px 40px;
-    position: absolute;
-    right: 0px;
-    bottom: 40px;
+    background-color: var(--lavender);
+    padding: 50px 100px;
 }
 
 /* HERO STYLES END */
@@ -219,7 +209,7 @@ header nav ul li a:hover {
     position: absolute;
     bottom: 25px;
     left: 25px;
-    background-color: var(--darkteal);
+    background-color: var(--navy);
     color: var(--white);
     padding-left: 30px;
     padding-right: 30px;
@@ -233,12 +223,13 @@ header nav ul li a:hover {
 /* CONTACT SECTION STYLES START */
 
 .contact-me {
-    background-color: var(--darkpink);
+    background-color: var(--teal);
     align-items: center;
     justify-content: space-between;
 }
 
-.contact-me h2 {
+.contact-me h2,
+.contact-me span {
     color: var(--white);
 }
 
@@ -282,6 +273,8 @@ footer {
     background-color: var(--black);
     padding: 20px;
     text-align: center;
+    color: white;
+    font-size: 15px;
 }
 
 /* FOOTER SECTION STYLES END */
@@ -329,7 +322,7 @@ footer {
     }
 
     header nav ul li a:hover {
-        color: var(--darkpink);
+        color: var(--lavender);
         padding-top: 0;
         border-top: none;
     }
