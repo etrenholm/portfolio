@@ -409,13 +409,6 @@ footer {
         display: block;
     }
 
-    .hero-text-bg {
-        text-align: center;
-        padding: 10px 0 10px 0px;
-        width: 100%;
-        height: 110px;
-    }
-
     .quarter-block {
         flex: 0 100%;
     }
